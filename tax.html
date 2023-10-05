@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Task</title>
+  </head>
+  <style></style>
+  <body>
+    <div class="claculator">
+      <!-- from -->
+      <div class="taxFrom">
+        <span
+          style="
+            margin-bottom: 4px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            display: inline-block;
+          "
+          >Enter Your Amount</span
+        >
+        <div>
+            <span>$</span><input placeholder="Type Your Income" type="number" id="incomeFiled" />
+        </div>
+        <span
+          style="margin: 5px 0 10px 0;font-weight: 600; color: rgb(128, 128, 128); font-size: 12px; display: inline-block"
+          >According To Bangladesh</span
+        >
+      </div>
+      <!-- display -->
+      <div class="display">
+        <div>
+          <span>Amount</span>
+          <h2>$<span id="incomeDisplay">0</span></h2>
+        </div>
+        <div>
+          <span>S.Tex</span>
+          <h2 id="textDisplay">$0</h2>
+        </div>
+      </div>
+      <!-- keyboard -->
+      <div id="keyboard">
+        <div onClick="key(this.innerText)">1</div>
+        <div onClick="key(this.innerText)">2</div>
+        <div onClick="key(this.innerText)">3</div>
+        <div onClick="key(this.innerText)">Clear</div>
+        <div onClick="key(this.innerText)">5</div>
+        <div onClick="key(this.innerText)">6</div>
+        <div onClick="key(this.innerText)">7</div>
+        <div onClick="key(this.innerText)">8</div>
+        <div onClick="key(this.innerText)">9</div>
+        <div onClick="key(this.innerText)">0</div>
+        <div onClick="key(this.innerText)">00</div>
+        <div onClick="key(this.innerText)">Cancel</div>
+      </div>
+      <button id="calculateBtn">Calculate Tax</button>
+    </div>
+    <script src="tax.js"></script>
+  </body>
+</html>
